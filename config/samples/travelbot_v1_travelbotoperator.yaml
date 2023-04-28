@@ -1,0 +1,12 @@
+apiVersion: travelbot.ragainsth.com/v1
+kind: TravelbotOperator
+metadata:
+  labels:
+    app.kubernetes.io/name: travelbotoperator
+    app.kubernetes.io/instance: travelbotoperator-sample
+    app.kubernetes.io/part-of: travelbot-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: travelbot-operator
+  name: travelbotoperator-sample
+spec:
+  # TODO(user): Add fields here

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: travelbot-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: travelbot
+  template:
+    metadata:
+      labels:
+        app: travelbot
+    spec:
+      securityContext:
+        runAsUser: 65532
+      containers:
+      - name: travelbot-service
+        image: tcotav/travelbot:1.00
+        imagePullPolicy: IfNotPresent
+        command: ["/travelbot", "--sleep=5"]

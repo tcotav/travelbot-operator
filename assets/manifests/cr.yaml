@@ -1,0 +1,10 @@
+apiVersion: travelbot.ragainsth.com/v1
+kind: TravelbotOperator
+metadata:
+  name: cluster
+  namespace: travelbot-operator-system
+spec:
+  sleepDuration: "10"
+  # shipName: "Titanic"
+  # shipSpeed: 2
+  deployImage: docker.io/tcotav/travelbot:1.02

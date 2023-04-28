@@ -1,0 +1,27 @@
+# permissions for end users to view travelbotoperators.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: travelbotoperator-viewer-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: travelbot-operator
+    app.kubernetes.io/part-of: travelbot-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: travelbotoperator-viewer-role
+rules:
+- apiGroups:
+  - travelbot.ragainsth.com
+  resources:
+  - travelbotoperators
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - travelbot.ragainsth.com
+  resources:
+  - travelbotoperators/status
+  verbs:
+  - get
