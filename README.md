@@ -10,11 +10,11 @@ The Travelbot application is a simple demo program that generates a map of 3-5 s
 
 The Travelbot Operator starts as a level I operator and will progress along the levels of the operator capacity as new features and capabilities are added. The following levels are planned:
 
-Level I: Basic deployment management, including creating and updating deployments and managing replicas.
-Level II: Health monitoring and automatic scaling based on resource utilization.
-Level III: Automated disaster recovery and backup/restore capabilities.
-Level IV: Advanced configuration management and traffic routing capabilities.
-Level V: Machine learning and AI-driven optimizations for performance and cost.
+* Level I: Basic deployment management, including creating and updating deployments and managing replicas.
+* Level II: Health monitoring and automatic scaling based on resource utilization.
+* Level III: Automated disaster recovery and backup/restore capabilities.
+* Level IV: Advanced configuration management and traffic routing capabilities.
+* Level V: Machine learning and AI-driven optimizations for performance and cost.
 
 
 ## Getting Started
