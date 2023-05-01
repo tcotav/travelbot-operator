@@ -102,6 +102,11 @@ func (r *TravelbotOperatorReconciler) Reconcile(ctx context.Context, req ctrl.Re
 		deployment.Spec.Template.Spec.Containers[0].Image = operatorCR.Spec.DeployImage
 	}
 
+	replicaSize := operatorCR.Spec.Replicas
+	if operatorCR.Spec.Replicas != replicaSize {
+		deployment.Spec.Replicas = &replicaSize
+	}
+
 	// indicates that the operatorCR resource object should be listed as the OwnerReference of the deployment
 	// this is an API field denoting which object owns this object
 	ctrl.SetControllerReference(operatorCR, deployment, r.Scheme)

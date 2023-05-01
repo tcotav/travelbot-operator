@@ -37,6 +37,9 @@ spec:
             properties:
               deployImage:
                 type: string
+              replicas:
+                format: int32
+                type: integer
               shipName:
                 type: string
               shipSpeed:

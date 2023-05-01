@@ -32,6 +32,7 @@ type TravelbotOperatorSpec struct {
 	ShipSpeed     string `json:"shipSpeed,omitempty"`
 	SleepDuration string `json:"sleepDuration,omitempty"`
 	DeployImage   string `json:"deployImage,omitempty"`
+	Replicas      int32  `json:"replicas,omitempty"`
 }
 
 // TravelbotOperatorStatus defines the observed state of TravelbotOperator

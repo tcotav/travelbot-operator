@@ -4,6 +4,7 @@ metadata:
   name: cluster
   namespace: travelbot-operator-system
 spec:
+  replicas: 1
   sleepDuration: "10"
   # shipName: "Titanic"
   # shipSpeed: 2
